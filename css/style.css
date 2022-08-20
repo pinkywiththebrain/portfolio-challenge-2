@@ -1,0 +1,55 @@
+:root {
+    --gray: #363034;
+    --cream: rgb(233, 227, 195);
+    --pink: #ffc0cb;
+
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: var(--gray);
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica,
+    Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol';
+    line-height: 1.5;
+    color: var(--cream);
+    width: 60%;
+    margin: 0% 20%;
+    
+
+}
+
+/* header + navbar */
+
+.navbar {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 30px;
+    background-color: var(--pink);
+    color: var(--gray);
+    
+}
+
+.navlinks {
+    cursor: pointer;
+    list-style: none;
+}
+
+.navlinks li {
+    display: inline-block;
+    padding: 0px 20px;
+}
+
+.navlinks li a {
+
+}
+
+/* about section*/
+
+.about {
+
+}

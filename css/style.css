@@ -17,7 +17,6 @@ body {
     color: var(--cream);
     width: 60%;
     margin: 0% 20%;
-    
 
 }
 
@@ -51,5 +50,35 @@ body {
 /* about section*/
 
 .about {
+    display: flex;
+    flex-wrap: wrap;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    
 
 }
+
+.about .profileimage {
+    width: 250px;
+
+}
+
+.about .profileimage img {
+    max-width: 100%;
+
+}
+
+.about .description {
+    width: 70%;
+
+}
+
+.about .description h2 {
+    margin: 20px;
+
+}
+
+.about .description p {
+    margin: 20px;
+}
+

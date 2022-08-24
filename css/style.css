@@ -9,6 +9,10 @@
     box-sizing: border-box;
 }
 
+h1, h2, h3 {
+    font-family: 'Courier New', Courier, monospace;
+
+}
 body {
     background-color: var(--gray);
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica,
@@ -54,12 +58,11 @@ body {
     flex-wrap: wrap;
     padding-top: 50px;
     padding-bottom: 50px;
-    
 
 }
 
 .about .profileimage {
-    width: 250px;
+    width: 300px;
 
 }
 
@@ -82,3 +85,65 @@ body {
     margin: 20px;
 }
 
+/* projects section */
+
+.projects {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.projects h2 {
+    text-align: center;
+    width: 100%;
+}
+
+.projects :nth-child(2) {
+    width: 100%;
+}
+
+.projects :nth-child(2) img {
+    width: 100%;
+}
+
+.card {
+    flex: 0 0 1;
+    flex-direction: row;
+    border-width: 2px;
+    border-style: solid;
+    border-radius: 10px;
+    border-color: var(--pink);
+    background-color: var(--pink);
+    color: var(--gray);
+    margin: 15px;
+    width: 40%;
+}
+
+.card img {
+    width: 100%;
+    border-radius: 7px 7px 0px 0px;
+}
+
+.card header {
+    text-align: center;
+    
+} 
+.card p {
+    text-align: center;
+} 
+
+
+/* contact form */
+
+
+
+
+
+/* social media */
+
+.socialmedia ul{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    list-style: none;
+}

@@ -14,88 +14,91 @@
             <h1>Welcome!</h1>
             <div>
                 <ul class="navlinks">
-                    <li>About Me</li>
-                    <li>My Projects</li>
-                    <li>Contact Me</li>
-                    <li>Socials</li>
+                    <li><a href="#about">About Me</a></li>
+                    <li><a href="#projects">My Projects</a></li>
+                    <li><a href="#contact">Contact Me</a></li>
+                    <li><a href="#socials">Socials</a></li>
                 </ul>
             </div>
         </header>
         
-        <div class="about">
+        <div class="about" id="about">
 
             <figure class="profileimage">
-                <img src="assets/profileimage.png">
+                <img src="./assets/profileimage.png">
             </figure>
 
             <div class="description">
                 <h2>About the Developer</h2>
-                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quisquam aut illo et! Inventore rem voluptates voluptatibus asperiores obcaecati voluptas, voluptatum, quas labore libero blanditiis provident repellat nemo veniam quis sunt!</p>
+                <p class="indent">My name is Sophie Carr and I am a software development student from Richmond, Virginia. I have a background in fine arts, graduating from Henrico Highschool's Center for the Arts in 2015 and attending the Pennsylvania Academy of Fine Arts for illustration shortly after. I am interested in creative front end design and graphic design and would possibly like to get involved with game development as well.</p>
             </div>
 
         </div>
         <hr>
-        <div class="projects">
+        <div class="projects" id="projects">
 
             <h2>My Projects</h2>
 
             <section class="card">
-                <img src="./assets/image5.png">
+                <a href="https://pinkywiththebrain.github.io/refactor-challenge-1/"><img src="./assets/image5.png"></a>
                 <header>Horiseon Landing Page</header>
-                <p>Re</p>
+                <p>My refactoring project where I had to update the code to be more accessible and concise.</p>
 
             </section>
             <section class="card">
-                <img src="./assets/image4.png">
+                <a href="https://pinkywiththebrain.github.io/prework-study-guide/"><img src="./assets/image4.png"></a>
                 <header>Full Stack Pre-work Study Guide</header>
-                <p></p>
+                <p>A study guide created for students learning code!</p>
             </section>
             <section class="card">
-                <img src="./assets/image1.png">
+                <a href="#"><img src="./assets/image1.png"></a>
                 <header>Turtle Time</header>
-                <p></p>
+                <p>A clock/alarm app AND a virtual pet?? Time management has never been more fun!</p>
             </section>
             <section class="card">
-                <img src="./assets/image2.png">
-                <header></header>
-                <p>Block Game</p>
+                <a href="#"><img src="./assets/image2.png"></a>
+                <header>Block Game</header>
+                <p>You know the one. A classic game that you either love or hate!</p>
             </section>
             <section class="card">
-                <img src="./assets/image3.png">
-
-                <p>Art Website</p>
+                <a href="#"><img src="./assets/image3.png"></a>
+                <header>Art Website</header>
+                <p>My personal art website made by yours truly.</p>
             </section>
 
         </div>
         <hr>
-        <div class="contact">
+        <div class="contact" id="contact">
 
             <h2>What to get in contact with me about a project?</h2>
+
             <form>
 
                 <label for="name">Full Name:</label><br>
-                <input type="text" id="name" name="name" placeholder="Noodle McDoodle"><br>
+                <input type="text" class="text-input" id="name" name="name" placeholder="Noodle McDoodle"><br>
 
                 <label for="email">Email:</label><br>
-                <input type="text" id="email" name="email" placeholder="mr.mcdoodle@example.com"><br>
+                <input type="text" class="text-input" id="email" name="email" placeholder="mr.mcdoodle@example.com"><br>
 
                 <label for="message">Message:</label><br>
-                <input type="text" id="message" name="message" placeholder="Leave a short message..."> <br>
+                <textarea type="text" class="text-input" id="message" name="message" placeholder="Leave a short message..."></textarea> <br>
                 <input type="submit">
 
             </form>
         </div>
+        <hr>
+        <div class="socials" id="socials">
 
-        <nav class="socialmedia">
             <h2>Follow me on social media !</h2>
-            <ul>
-                <li><a>Linkedin</a></li>
-                <li><a>Facebook</a></li>
-                <li><a>Instagram</a></li>
-                <li><a>Twitter</a></li>
-                <li><a>Twitch</a></li>
+            <ul class="sociallinks">
+                <li><a href="#">Linkedin</a></li>
+                <li><a href="#">Facebook</a></li>
+                <li><a href="#">Instagram</a></li>
+                <li><a href="#">Twitter</a></li>
+                <li><a href="#">Twitch</a></li>
             </ul>
-        </nav>
+
+        </div>
         
         <footer>Thanks for lookin'! &copy; Sophie Carr 2022</footer>
 

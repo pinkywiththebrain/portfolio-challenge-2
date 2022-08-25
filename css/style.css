@@ -13,6 +13,7 @@ h1, h2, h3 {
     font-family: 'Courier New', Courier, monospace;
 
 }
+
 body {
     background-color: var(--gray);
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica,
@@ -48,7 +49,8 @@ body {
 }
 
 .navlinks li a {
-
+    text-decoration: none;
+    color: var(--gray);
 }
 
 /* about section*/
@@ -62,7 +64,7 @@ body {
 }
 
 .about .profileimage {
-    width: 300px;
+    width: 350px;
 
 }
 
@@ -72,7 +74,7 @@ body {
 }
 
 .about .description {
-    width: 70%;
+    width: 60%;
 
 }
 
@@ -85,17 +87,21 @@ body {
     margin: 20px;
 }
 
+.indent {
+    text-indent: 30px;
+}
+
 /* projects section */
 
 .projects {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-around;
 }
 
 .projects h2 {
     text-align: center;
     width: 100%;
+    margin: 20px;
 }
 
 .projects :nth-child(2) {
@@ -107,16 +113,14 @@ body {
 }
 
 .card {
-    flex: 0 0 1;
-    flex-direction: row;
     border-width: 2px;
     border-style: solid;
     border-radius: 10px;
     border-color: var(--pink);
     background-color: var(--pink);
     color: var(--gray);
-    margin: 15px;
-    width: 40%;
+    margin: 2%;
+    width: 45%;
 }
 
 .card img {
@@ -126,24 +130,70 @@ body {
 
 .card header {
     text-align: center;
+    padding: 3px;
+    font-weight: bold;
     
 } 
 .card p {
     text-align: center;
+    padding: 3px
 } 
 
 
 /* contact form */
 
+.contact h2 {
+    text-align: center;
+    width: 100%;
+    margin: 20px;
+}
 
+form label {
+    margin: 10px;
+}
 
+.text-input {
+    padding: 5px;
+    margin: 10px;
+}
 
+.text-input:hover {
+    box-shadow: 0 0 7px var(--pink);
+}
 
 /* social media */
 
-.socialmedia ul{
+.socials h2 {
+    text-align: center;
+    width: 100%;
+    margin: 20px;
+}
+
+.socials ul {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
     list-style: none;
 }
+
+.sociallinks li a {
+    text-decoration: none;
+    color: var(--pink);
+}
+
+/* footer */
+
+footer {
+    text-align: center;
+    margin: 50px;
+}
+
+
+
+
+
+  @media only screen and (max-width: 900px) {
+    .card {
+        width: 100%;
+    }
+  }

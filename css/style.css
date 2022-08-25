@@ -140,7 +140,16 @@ body {
 } 
 
 
-/* contact form */
+/* contact form + social media links*/
+
+.contactme {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.contactme section {
+    width: 50%;
+}
 
 .contact h2 {
     text-align: center;
@@ -161,8 +170,6 @@ form label {
     box-shadow: 0 0 7px var(--pink);
 }
 
-/* social media */
-
 .socials h2 {
     text-align: center;
     width: 100%;
@@ -171,14 +178,27 @@ form label {
 
 .socials ul {
     display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
+    flex-direction: column;
+    align-items: center;
     list-style: none;
+    line-height: 30px;
 }
 
 .sociallinks li a {
     text-decoration: none;
     color: var(--pink);
+}
+
+.button {
+    margin-left: 15px;
+    padding: 1% 2%;
+    color: var(--gray);
+    background-color: var(--pink);
+    border: solid;
+    border-color: var(--cream);
+    border-radius: 3px;
+    outline: none;
+    cursor: pointer;
 }
 
 /* footer */
@@ -192,8 +212,14 @@ footer {
 
 
 
-  @media only screen and (max-width: 900px) {
+  @media only screen and (max-width: 1000px) {
     .card {
+        width: 100%;
+    }
+  }
+
+  @media only screen and (max-width: 1000px) {
+    .contactme section {
         width: 100%;
     }
   }
